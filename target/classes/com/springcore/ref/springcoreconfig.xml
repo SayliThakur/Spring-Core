@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context" 
+    xmlns:p="http://www.springframework.org/schema/p" 
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans 
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context 
+        http://www.springframework.org/schema/context/spring-context.xsd"> 
+        
+                  <!-- by using reference --> 
+      
+       <bean class="com.springcore.ref.B" name="bref" p:City="Palghar" p:State="Maharashtra" p:Country="India" />
+        
+       <bean class="com.springcore.ref.A" name="aref" p:Id="1" p:Name="SAYLI"  p:Address-ref="bref" />
+</beans>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context" 
+    xmlns:p="http://www.springframework.org/schema/p" 
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans 
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context 
+        http://www.springframework.org/schema/context/spring-context.xsd"> 
+        
+                  <!-- by using collection --> 
+      
+      
+        <bean class="com.springcore.collection.Collection" name="collection">
+        <property name="Id" value="1"/>
+        
+        <property name="Name">
+        <list>
+              <value>SAYLI</value>
+              <value>HARSH</value>
+              <value>TRIXIE</value>
+        </list>
+        </property>
+        <property name="Address">
+        <set>
+              <value>Palghar</value>
+              <value>Boisar</value>
+              <value>Virar</value>
+        </set>
+        </property>
+        <property name="Course">
+        <map>
+            <entry key="JAVA" value="3 Months" />
+            <entry key="Spring" value="2 Months"/>
+        </map>
+        </property>
+        </bean>
+
+</beans>
